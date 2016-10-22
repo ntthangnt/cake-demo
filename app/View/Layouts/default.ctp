@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html class="" lang="en">
 <head>
+<?php echo $this->Html->charset(); ?>
 	<meta charset="utf-8">
 	<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1"><![endif]-->
 	<!--<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">-->
@@ -21,7 +22,7 @@
 	<!--[if lt IE 9]>
 		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
 		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-		<link rel="stylesheet" href="css/ie.css">
+		<?php echo $this->Html->css('myface/ie.css'); ?>
   <![endif]-->
   <!--[if lt IE 8]><html class="ie">
 		<script>
@@ -1943,15 +1944,13 @@
   <!-- /.modal-dialog -->
 </div>
 
-		<!--script-->
-		<script src="assets/js/lib/jquery.js" type="text/javascript"></script>
-<script src="assets/js/plugin/moment.min.js" type="text/javascript"></script>
-<script src="assets/js/plugin/bootstrap.js" type="text/javascript"></script>
-<script src="assets/js/plugin/bootstrap-select.js" type="text/javascript"></script>
-<script src="assets/js/plugin/bootstrap-datetimepicker.js" type="text/javascript"></script>
-<script src="assets/js/plugin/slick.min.js" type="text/javascript"></script>
-<script src="assets/js/script.js" type="text/javascript"></script>
-
+<?php  echo $this->Html->script('myface/lib/jquery'); ?>
+<?php  echo $this->Html->script('myface/plugin/moment.min'); ?>
+<?php  echo $this->Html->script('myface/plugin/bootstrap'); ?>
+<?php  echo $this->Html->script('myface/plugin/bootstrap-select'); ?>
+<?php  echo $this->Html->script('myface/plugin/bootstrap-datetimepicker'); ?>
+<?php  echo $this->Html->script('myface/plugin/slick.min'); ?>
+<?php  echo $this->Html->script('myface/script'); ?>
 	</div>
 </body>
 </html>
